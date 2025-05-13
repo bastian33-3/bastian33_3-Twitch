@@ -3,107 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canal de Twitch - bastian33_3</title>
+    <title>bastian33_3 en Twitch</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #2c2f36;
+            font-family: Arial, sans-serif;
+            background-color: #18181b;
             color: white;
             text-align: center;
         }
 
         header {
-            background-color: #6441a5;
-            padding: 20px 0;
+            background-color: #9147ff;
+            padding: 30px 0;
         }
 
-        h1 {
-            font-size: 2.5rem;
+        header h1 {
             margin: 0;
+            font-size: 2.5rem;
         }
 
-        nav {
-            margin: 20px 0;
+        main {
+            padding: 30px 15px;
         }
 
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .content {
-            padding: 20px;
-        }
-
-        .twitch-stream {
-            max-width: 100%;
-            height: 400px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            text-align: center;
+        iframe {
+            width: 90%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 0 20px #000;
         }
 
         .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
             background-color: #6441a5;
             color: white;
-            padding: 10px 20px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
             font-size: 1.1rem;
-            margin-top: 20px;
-            display: inline-block;
+            transition: background-color 0.3s ease;
         }
 
         .button:hover {
-            background-color: #8a55c4;
+            background-color: #7d5bd0;
+        }
+
+        footer {
+            margin-top: 50px;
+            background-color: #1f1f23;
+            padding: 15px 0;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Bienvenidos al Canal de Twitch de bastian33_3</h1>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Sobre mí</a>
-            <a href="#">Horario</a>
-            <a href="#">Contacto</a>
-        </nav>
+        <h1>Canal de Twitch: bastian33_3</h1>
     </header>
 
-    <div class="content">
-        <h2>¡Estoy en vivo ahora!</h2>
-        <p>¡Sígueme para no perderte mis transmisiones de videojuegos y más!</p>
+    <main>
+        <h2>¡En Vivo o Grabaciones Recientes!</h2>
+        <p>Mira mis transmisiones directamente aquí. ¡No olvides seguirme en Twitch!</p>
 
-        <!-- Stream de Twitch -->
-        <iframe 
-            src="https://player.twitch.tv/?channel=bastian33_3&parent=https://bastian33-3.github.io"
-            frameborder="0"
-            allowfullscreen="true"
-            scrolling="no"
-            height="400"
-            width="80%"
-            class="twitch-stream">
+        <!-- Transmisión en vivo de Twitch -->
+        <iframe
+            src="https://player.twitch.tv/?channel=bastian33_3&parent=https://bastian33-3.github.io/bastian33_3-Twitch/"
+            allowfullscreen>
         </iframe>
 
-        <p>¡No olvides seguirme en Twitch!</p>
-        <a href="https://www.twitch.tv/bastian33_3" class="button" target="_blank">Visitar mi canal</a>
-    </div>
+        <br>
+
+        <!-- Botón para ir al canal -->
+        <a href="https://www.twitch.tv/bastian33_3" target="_blank" class="button">Ir a mi canal</a>
+    </main>
 
     <footer>
         <p>&copy; 2025 bastian33_3 | Todos los derechos reservados</p>
